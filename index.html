@@ -1,1 +1,80 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Assignment 6</title>
+<script   src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script language="javascript">
+	function displayImage1(){
+		
+	}
+	
+	$(document).ready (
+	function() 
+	{   		
+		$("#btn1").click(displayImage1);
+	});
+	
 
+
+	
+	
+</script>
+	
+	<style>
+		ul {list-style-type:none; width: 100%; margin-top:0px}
+		ul li {display: inline-block; float:left; margin-right:10px}
+	
+	
+	</style>
+</head>
+
+<body>
+	
+	<ul>
+		<li>
+		<img id="small_lisa" src="https://harrysteinberg.github.io/Assignment6/small_monaLisa.jpg" alt="SmallLisa" width="158" height="239">
+		</li>
+	
+		<li>
+		<img id="large_lisa" src="https://harrysteinberg.github.io/Assignment6/small_monaLisa.jpg" alt="SmallLisa" width="316" height="478">
+		</li>
+	
+		<li>
+		<img id="starry_night" 
+		 src="https://cdn.shopify.com/s/files/1/0627/1477/products/Starry_Night_03d43ad7-d879-40ef-8525-5f3c38918acc_grande.jpg?v=1542461422" alt="smallStarry" width="239" 
+		 height="158">
+		</li>
+	
+		<li>
+		<img id="perst_mem" src="https://legomenon.com/images/salvador-dali-persistence-of-memory-clocks-meaning.jpg" alt="perst_mem" width="239" height="158">
+		</li>
+
+		<li>
+		<img id="george_wash" src="https://cdn.incollect.com/sites/default/files/zoom/Portrait-of-George-Washington-191389-332481.jpg" alt="gw" width="185" height="239">
+		</li>
+
+		<li>
+		<img id="terrace" src="https://i1.wp.com/auralcrave.com/wp-content/uploads/2018/10/Vincent_Willem_van_Gogh_-_Cafe_Terrace_at_Night_cove.jpg?resize=810%2C515&ssl=1" alt="terrace" width="239" height="158">
+		</li>
+	</ul>
+	
+	<script language="javascript">
+	var image_1 = {name: "Mona Lisa", price: "$5", small_image: small_lisa, 
+				   large_image: large_lisa}
+	
+	$('#large_lisa').hide();
+		
+	$( "li" ).hover(function() {
+    	$( this ).fadeOut(500);
+  	}, function() {
+    	$( this ).fadeIn(500);
+  }
+);
+	</script>
+	
+	<div id="large_image"> Hello </div>
+	
+	
+</body>
+</html>
